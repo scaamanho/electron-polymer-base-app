@@ -1,0 +1,28 @@
+{
+  "name": "SampleApp",
+  "description": "Electron and polymer sample application base",
+  "main": "index.html",
+  "keywords": [
+    "electron", "polymer", "sample", "application", "nodejs"
+  ],
+  "authors": [
+    "Santiago Caamaño"
+  ],
+  "license": "GPL 3.0",
+  "homepage": "http://localhost.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
+    "gold-elements": "PolymerElements/gold-elements#^1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
+    "platinum-elements": "PolymerElements/platinum-elements#^2.0.0",
+    "google-web-components": "GoogleWebComponents/google-web-components#^1.1.2"
+  }
+}

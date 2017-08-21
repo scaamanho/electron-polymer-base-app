@@ -1,0 +1,23 @@
+{
+  "name": "electron-base-app",
+  "version": "1.0.0",
+  "description": "A minimal Electron application with polymer elements",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/scaamanho",
+  "keywords": [
+    "electron",
+    "quick",
+    "start",
+    "polymer",
+    "base"
+  ],
+  "author": "Santiago Caamaño",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-reload":"1.2.1"
+  }
+}
