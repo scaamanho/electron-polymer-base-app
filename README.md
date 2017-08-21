@@ -66,6 +66,6 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 # Build Minimal Polymer Application
 polymer build
 
-#Run Webserver
+# Run Webserver
 polymer serve
 
