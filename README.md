@@ -4,9 +4,9 @@
 
 **Provides Electron Autoreload when changes are detected**
 To revome this behaviour just comment line 
-`require('electron-reload')(__dirname);` in file `main.js` 
+`require('electron-reload')(__dirname);` in file **`main.js`** 
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+This is a minimal Electron-Polymer application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
 **Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
 
@@ -16,6 +16,11 @@ A basic Electron application needs just these files:
 - `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
 - `index.html` - A web page to render. This is the app's **renderer process**.
 
+A Basic Polymer application need just these files:
+- `bower.json` Polymer bower dependencies
+- `polymer.json`  
+- `index.html`  Polymer main page
+
 You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
 ## To Use
@@ -24,18 +29,20 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/scaamanho/electron-polymer-base-app.git
 # Go into the repository
-cd electron-quick-start
-# Install dependencies
+cd electron-polymer-base-app
+# Install global dependencies
 npm install -g bower
 npm install -g polymer-cli
+npm install -g electron
 
 # Install Polymer Dependencies
 bower install 
 
 # Install electron dependecies
 npm install
+
 # Run the app
 npm start
 ```
@@ -56,8 +63,9 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 [GPL-3.0](LICENSE.md)
 
 
-# Build
+# Build Minimal Polymer Application
 polymer build
 
+#Run Webserver
 polymer serve
 
