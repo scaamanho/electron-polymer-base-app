@@ -9,6 +9,10 @@
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 
+<link rel="import" href="../sample-menu/sample-menu.html">
+<link rel="import" href="../sample-content/sample-content.html">
+
+
 
 <dom-module id="sample-app">
   <template>
@@ -19,8 +23,8 @@
       }
 
       paper-icon-button.menu {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
     paper-header-panel.menu{
       color: white;
@@ -64,7 +68,7 @@
           <div>Application</div>
           <div><paper-icon-button  class="menu" icon="menu" paper-drawer-toggle></paper-icon-button></div>
         </paper-toolbar>
-        <div> Drawer content... </div>
+        <sample-menu/>
       </paper-header-panel>
        <!-- MAIN -->
       <paper-header-panel main class="content">
@@ -73,15 +77,8 @@
           <div>Title</div>
         </paper-toolbar>
 
-        <!-- CONTENT -->
-        <!--<div>
-          <paper-button onclick="flipDrawer()" raised>flip drawer</paper-button>
-        </div>
-        <div>
-          <paper-button paper-drawer-toggle raised>toggle drawer</paper-button>
-        </div>-->
-        
-        <h1>Content</h1>
+        <!-- CONTENT -->        
+        <sample-content/>
 
       </paper-header-panel>
     </paper-drawer-panel>
